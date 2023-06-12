@@ -43,13 +43,13 @@ public class Application implements CommandLineRunner {
         DataLine.Info info = new DataLine.Info(TargetDataLine.class, format);
 
         TargetDataLine microphone = null;
-        try (Model model = new Model("vosk-model-small-ru-0.22");
+        try (Model model = new Model("/home/forester/sowa/vosk-model-small-ru-0.22");
              Recognizer recognizer = new Recognizer(model, 120000)) {
             try {
                 microphone = (TargetDataLine) AudioSystem.getLine(info);
                 microphone.open(format);
                 microphone.start();
-                initSowaConnect("COM3");
+                initSowaConnect("COM2");
 
                 ByteArrayOutputStream out = new ByteArrayOutputStream();
                 int numBytesRead;
