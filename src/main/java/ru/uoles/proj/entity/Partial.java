@@ -1,4 +1,4 @@
-package ru.uoles.ex.entity;
+package ru.uoles.proj.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

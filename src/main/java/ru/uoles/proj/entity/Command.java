@@ -1,4 +1,4 @@
-package ru.uoles.ex.entity;
+package ru.uoles.proj.entity;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
